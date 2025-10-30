@@ -2,7 +2,7 @@ pipeline{
 	agent any 
 
 	stages{
-		stage('my 1st stage...!'){
+		stage('my 1st stage'){
 			steps{
 			sh '''
 			echo "Hi, this is my first step in jenkins"
