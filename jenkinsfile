@@ -1,0 +1,37 @@
+pipeline{
+	agent any 
+
+	stages{
+		stage('my 1st stage...!'){
+			steps{
+			sh '''
+			echo "Hi, this is my first step in jenkins"
+			'''
+		    }
+		}
+			
+		stage('my 2nd stage'){
+			steps{
+				sh '''
+				echo "Hi, This is my second step in jenkins"
+				'''
+			}
+		}
+
+		stage('my 3rd stage'){
+			steps{
+				sh '''
+				echo "Hi, This is my third step in jenkins"
+				'''
+			}
+		}
+
+		stage('my 4th stage'){
+			steps{
+				sh '''
+				echo "Hi, This is my fourth step in jenkins"
+				'''
+			}
+		}
+	}
+}
