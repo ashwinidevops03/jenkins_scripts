@@ -8,7 +8,7 @@ pipeline{
     stages{
         stage('GIT-CHECKOUT'){
             steps{
-                git url: '' , branch: ''
+                git url: 'https://github.com/ashwinidevops03/jenkins_scripts.git' , branch: 'master'
             }
         }
 
