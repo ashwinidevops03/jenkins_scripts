@@ -1,0 +1,25 @@
+pipeline{
+    agent any
+
+    parameters{
+        string(name: 'ENV', defaultValue: 'prod', description: 'This is to test...!')
+    }
+
+    stages{
+        stage('GIT-CHECKOUT'){
+            steps{
+                git url: '' , branch: ''
+            }
+        }
+
+        stage('Build_stage'){
+            steps{
+                sh '''
+                    echo "hello Ashwini"
+                    echo "This is your first pipeline project"
+                    echo "All the very best"
+                '''
+            }
+        }
+    }
+}
